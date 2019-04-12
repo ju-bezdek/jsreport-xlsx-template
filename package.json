@@ -1,5 +1,5 @@
 {
-  "name": "jsreport-xlsx-template",
+  "name": "@ju-bezdek/jsreport-xlsx-template",
   "version": "1.0.0",
   "description": "jsreport xlsx-template extension",
   "keywords": [
@@ -7,12 +7,6 @@
     "xlsx",
     "xlsx-template"
   ],
-  "scripts": {
-    "build": "jsreport-studio-build",
-    "test": "standard",
-    "start": "jsreport-studio-start --httpPort 5488",
-    "prepublish": "in-publish && jsreport-studio-build || not-in-publish"
-  },
   "standard": {
     "ignore": [
       "main.js"
@@ -41,5 +35,17 @@
     "lib",
     "index.js",
     "jsreport.config.js"
-  ]
+  ],
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ju-bezdek/jsreport-xlsx-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ju-bezdek/jsreport-xlsx-template/issues"
+  },
+  "homepage": "https://github.com/ju-bezdek/jsreport-xlsx-template#readme"
 }
