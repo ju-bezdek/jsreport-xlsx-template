@@ -1,0 +1,45 @@
+{
+  "name": "jsreport-xlsx-template",
+  "version": "1.0.0",
+  "description": "jsreport xlsx-template extension",
+  "keywords": [
+    "jsreport",
+    "xlsx",
+    "xlsx-template"
+  ],
+  "scripts": {
+    "build": "jsreport-studio-build",
+    "test": "standard",
+    "start": "jsreport-studio-start --httpPort 5488",
+    "prepublish": "in-publish && jsreport-studio-build || not-in-publish"
+  },
+  "standard": {
+    "ignore": [
+      "main.js"
+    ],
+    "parser": "babel-eslint",
+    "env": {
+      "node": true,
+      "mocha": true,
+      "browser": true
+    }
+  },
+  "license": "MIT",
+  "dependencies": {
+    "in-publish": "2.0.0",
+    "xlsx-template": "0.5.0"
+  },
+  "author": "Juraj Bezdek",
+  "devDependencies": {
+    "babel-eslint": "6.0.4",
+    "eslint": "2.11.1",
+    "eslint-config-standard-jsx": "1.2.1",
+    "eslint-plugin-babel": "3.2.0",
+    "standard": "7.1.2"
+  },
+  "files": [
+    "lib",
+    "index.js",
+    "jsreport.config.js"
+  ]
+}
