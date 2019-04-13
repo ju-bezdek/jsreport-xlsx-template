@@ -13,7 +13,10 @@ Most simplistic use
 return jsreport.render({
                 template:  {
                     recipe: "xlsx-template",
-                    "xlsx-template":{templateFile:fs.readFile("yourTemplate.xlsx")}
+                    "xlsx-template":{
+                        templateAsset:
+                            {content: fs.readFileSync("yourTemplate.xlsx")}
+                    }
                 },
                 data: {"some":"data"}
         }).then((output)=>{
